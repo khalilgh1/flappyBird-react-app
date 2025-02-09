@@ -12,9 +12,6 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     padding: 2rem;
     text-align: center;
-    *{
-        font-family:'Tiny5';
-    }
     .title {
         margin-top: 5rem;
         color: gold;
@@ -83,11 +80,4 @@
     }
 
 }
-@font-face {
-    font-family: 'PixelfySans';
-    src: url(src/font/static/PixelifySans-Bold.ttf);
-}
-@font-face {
-    font-family: 'Tiny5';
-    src: url(src/font/Tiny5/Tiny5-Regular.ttf);
-}
+

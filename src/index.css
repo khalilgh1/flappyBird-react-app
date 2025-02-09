@@ -1,18 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* ... */
 
-html{
+@font-face {
+    font-family: 'Tiny5';
+    src: url('/font/Tiny5/Tiny5-Regular.ttf');
+}
+
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     height: max-content;
 }
 
-body{
+body {
     height: max-content;
-    font-family: 'Tiny5', sans-serif;
+    
 }
+body *{
+        font-family: 'Tiny5', monospace;
+}
+
+
+/* Scrollbar Styles */
 ::-webkit-scrollbar {
     width: 10px;
 }

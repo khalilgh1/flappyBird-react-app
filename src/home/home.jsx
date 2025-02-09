@@ -1,13 +1,12 @@
 //import style from output.css of tailwind
 import '../output.css';
 import '../home/home.scss';
-import React, { useEffect, useState, useRef } from 'react';
+import React, {useEffect} from 'react';
 import Background from '../background/Background';
 import { SparklesCore } from '../../components/ui/sparkles'
 import AOS from 'aos';
 import '../../node_modules/aos/dist/aos.css';
 import '../../node_modules/animate.css';
-import { motion } from "motion/react";
 import FeatureCards from '../../components/ui/FeatureCards';
 export default function Home() {
     useEffect(() => {
@@ -32,7 +31,7 @@ export default function Home() {
                     <SparklesCore className="sparkles"
                         background="transparent"
                     />
-                    <img src="src\assets\FlappyBird1.gif" alt="" />
+                    <img src="./assets/FlappyBird1.gif" alt="" />
                 </div>  
                 <FeatureCards></FeatureCards>
             </div>

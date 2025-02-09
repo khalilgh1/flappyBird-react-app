@@ -6,13 +6,13 @@ import Navbar from './header/navbar'
 import { SettingsProvider } from './contexts/settingsContext'
 
 function App() {
+  console.log(window.location.pathname);
   return (
     <>
       <SettingsProvider>
-        <Router>
+        <Router basename="/flappyBird-react-app">
           <Navbar />
           <Routes>
-          <Route path="/flappyBird-react-app" element={<FlappyBird />} />
             <Route path="/" element={<Home />} />
             <Route path="/game" element={<Game />} />
             <Route path="/settings" element={<Settings />} />

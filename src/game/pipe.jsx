@@ -1,9 +1,9 @@
 import React from 'react';
 import { SpriteAnimator } from 'react-sprite-animator';
 import { useSettings } from '../contexts/settingsContext';
-import pipeBody from '../assets/game_assets/Tiles/pipeBody.png';
-import pipeHeadTop from '../assets/game_assets/Tiles/pipeHeadTop.png';
-import pipeHeadBottom from '../assets/game_assets/Tiles/pipeHeadBottom.png';
+import pipeBody from '/assets/game_assets/Tiles/pipeBody.png';
+import pipeHeadTop from '/assets/game_assets/Tiles/pipeHeadTop.png';
+import pipeHeadBottom from '/assets/game_assets/Tiles/pipeHeadBottom.png';
 
 const Pipe = ({ x, height, isTop, type, cn }) => {
   const pipeWidth = 60; // Display width of the pipe

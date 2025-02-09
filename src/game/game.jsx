@@ -7,8 +7,8 @@ import Pipe from './pipe';
 
 // Move these outside the component
 
-const jumpSound = new Audio('src/assets/game_assets/audio/jump.wav');
-const windSound = new Audio('src/assets/game_assets/audio/windsound.mp3');
+const jumpSound = new Audio('assets/game_assets/audio/jump.wav');
+const windSound = new Audio('assets/game_assets/audio/windsound.mp3');
 jumpSound.volume = 0.5;
 windSound.volume = 0.5;
 jumpSound.preload = 'auto';
@@ -30,8 +30,8 @@ const Game = () => {
     const [playSound, setPlaySound] = useState(false);
     const { settings } = useSettings(); // Get settings from context
 
-    const birdSkin = `src/assets/game_assets/Player/${settings.birdSkin}.png`;
-    const bgStyle = `src/assets/game_assets/Background/${settings.background}.png`;
+    const birdSkin = `assets/game_assets/Player/${settings.birdSkin}.png`;
+    const bgStyle = `assets/game_assets/Background/${settings.background}.png`;
     const birdRef = useRef(null);
     const titleRef = useRef(null);
     const bgRef = useRef(null);
