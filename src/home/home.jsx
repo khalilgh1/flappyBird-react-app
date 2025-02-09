@@ -23,7 +23,7 @@ export default function Home() {
                 </h1>
                 <button
                     className='animate__animated animate__fadeIn'
-                    onClick={() => window.location.href = '/game'}
+                    onClick={() => window.location.href = '/flappyBird-react-app/game'}
                 >
                     PLAY NOW!
                 </button>
