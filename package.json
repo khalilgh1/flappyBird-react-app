@@ -1,5 +1,6 @@
 {
   "name": "snake-react-app",
+  "homepage": "https://github.com/khalilgh1/flappyBird-react-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,6 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "watch": "npx tailwindcss -i ./src/globals.css -o ./src/output.css --watch",
     "start": "concurrently \"npm run watch\" \"npm run dev\""
   },
@@ -22,6 +25,7 @@
     "clsx": "^2.1.1",
     "flowbite": "^3.1.2",
     "framer-motion": "^11.15.0",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.474.0",
     "motion": "^12.4.1",
     "react": "^18.3.1",
