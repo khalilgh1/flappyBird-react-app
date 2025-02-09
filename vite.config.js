@@ -9,5 +9,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base:'/flappyBird-react-app'
+  base:'/flappyBird-react-app/'
 })
