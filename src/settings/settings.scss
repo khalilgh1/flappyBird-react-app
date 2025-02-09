@@ -1,0 +1,47 @@
+.settings {
+    background-color: transparent;
+    border: 2px solid gray;
+    box-shadow: 2px 2px 8px 1px rgba(95, 54, 8, 0.461), -1px -1px 8px rgba(255, 255, 255, 0.406);
+    
+    h1 {
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    // Target only buttons that are direct children of .settings to avoid overriding nested components
+    > button {
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .bg-btn {
+        &:hover {
+            filter: brightness(1.3);
+        }
+    }
+
+    .sound-btn {
+        &:hover {
+            background-color: rgba(254, 243, 199, 0.5);
+        }
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4{
+        color: rgb(224, 224, 224);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .reset-btn{
+        background-color: hsl(0, 79%, 60%);
+        color: white;
+        &:hover {
+            background-color: hsl(0, 79%, 40%);
+        }
+        &:active {
+            background-color: hsl(0, 79%, 30%);
+        }
+    }
+}

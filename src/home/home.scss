@@ -1,0 +1,93 @@
+.home {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    text-align: center;
+    *{
+        font-family:'Tiny5';
+    }
+    .title {
+        margin-top: 5rem;
+        color: gold;
+        font-size: 6rem;
+    }
+
+    button {
+        font-size: 5rem;
+        background-color: transparent !important;
+        border: 2px solid white;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+
+        &:hover {
+            transition: all .3s ease;
+            color: gold;
+            border: 2px solid gold;
+            box-shadow: 2px 2px 8px hsl(60, 78%, 74%), -2px -2px 8px hsl(60, 78%, 74%);
+        }
+
+        &:active {
+            color: hsl(60, 69%, 55%);
+            border: 2px solid hsl(60, 69%, 55%);
+            box-shadow: inset 2px 2px 8px hsl(60, 69%, 55%), inset -2px -2px 8px hsl(60, 69%, 55%);
+        }
+    }
+}
+
+.bird-container {
+    position: relative;
+    height: calc(100% - 30rem);
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .sparkles {
+        position: absolute;
+        z-index: -1;
+        height: 5rem;
+        width: 100%;
+    }
+
+    img {
+        height: 30%;
+        width: 30%;
+        //animation: just move it to the right
+        animation: fly 5s linear infinite;
+    }
+}
+
+.new {
+    height: 400px;
+    color: yellow;
+    font-size: 5rem;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(400%);
+    }
+
+}
+@font-face {
+    font-family: 'PixelfySans';
+    src: url(src/font/static/PixelifySans-Bold.ttf);
+}
+@font-face {
+    font-family: 'Tiny5';
+    src: url(src/font/Tiny5/Tiny5-Regular.ttf);
+}

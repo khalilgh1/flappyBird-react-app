@@ -1,0 +1,129 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title {
+        display: flex;
+        width: max-content;
+        transform: translateY(-10rem);
+        color: gold;
+        font-size: 6rem;
+        .enter{
+            font-weight: bold;
+        }
+    }
+}
+.game_container{
+    background:  repeat center/cover fixed;
+    position: relative;
+    width: 70%;
+    height: 45rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 4px 4px 16px rgb(239, 227, 161),-4px -4px 16px rgb(239, 227, 161) ;
+    .score{
+        color: azure;
+        font-weight: bold;
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+        font-size: 3rem;
+        z-index: 2;
+    }
+    .bird {
+        position: absolute;
+        height: 16px; // Match the height of one frame
+        width: 16px;  // Match the width of one frame
+        background-repeat: no-repeat;
+        background-size: 64px 16px; // Total width of sprite (4 frames × 16px), height of one frame
+        transform: scale(4); // This will make the bird 4 times larger (64x64 pixels)
+        transform-origin: top left; // This ensures the bird's position is calculated from its top-left corner
+        image-rendering: pixelated; // This keeps the pixel art sharp when scaled
+        -webkit-image-rendering: crisp-edges; // Safari alternative
+        image-rendering: crisp-edges; // Firefox alternative
+    }
+
+    .frame-1 {
+        background-position: 0 0;
+    }
+
+    .frame-2 {
+        background-position: -16px 0;
+    }
+
+    .frame-3 {
+        background-position: -32px 0;
+    }
+
+    .frame-4 {
+        background-position: -48px 0;
+    }
+
+    .pipe {
+        canvas {
+            -webkit-image-rendering: crisp-edges; // Safari alternative
+            image-rendering: crisp-edges; // Firefox alternative
+            image-rendering: pixelated;
+        }
+        animation: fadeIn 1s !important;
+    }
+
+    .gameOver {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: red;
+        font-size: 7rem;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid red;
+        padding: 1rem;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        h3 {
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+        }
+    }
+}
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+    
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes birdFlap {
+    0% { background-position: 0 0; }
+    25% { background-position: -16px 0; }
+    50% { background-position: -32px 0; }
+    75% { background-position: -48px 0; }
+    100% { background-position: 0 0; }
+}

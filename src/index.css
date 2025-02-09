@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ... */
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    height: max-content;
+}
+
+body{
+    height: max-content;
+    font-family: 'Tiny5', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(24, 24, 47);
+}
+
+::-webkit-scrollbar-thumb {
+    background: gold;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b8860b;
+}

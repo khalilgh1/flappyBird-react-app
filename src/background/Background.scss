@@ -1,0 +1,30 @@
+.bg{
+  z-index: -1000;
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes birdFloat {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(20px, -15px) rotate(5deg); }
+    75% { transform: translate(-20px, 15px) rotate(-5deg); }
+  }
+  
+  @keyframes moveGrid {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-25px, -25px); }
+  }
+  
+  .animate-spin-slow {
+    animation: spin 8s linear infinite;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-bird {
+    animation: birdFloat 4s ease-in-out infinite;
+  }
+}

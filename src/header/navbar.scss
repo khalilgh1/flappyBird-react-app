@@ -1,0 +1,31 @@
+.navbar{
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    padding: 1rem;
+    li{
+        list-style: none;
+        a{
+            font-family: 'Tiny5', sans-serif;
+            transition: all 0.3s ease;
+            letter-spacing: 0.1rem;
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+            font-weight: 500;
+            &:hover{
+                color: gold;
+            }
+        }
+        .icon{
+            font-size: 1.8rem;
+            margin-right: .5rem;
+        }
+    }
+}
+@font-face {
+    font-family: 'Tiny5';
+    src: url(src/font/Tiny5/Tiny5-Regular.ttf);
+}
