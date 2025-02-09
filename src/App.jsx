@@ -12,6 +12,7 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
+          <Route path="/flappyBird-react-app" element={<FlappyBird />} />
             <Route path="/" element={<Home />} />
             <Route path="/game" element={<Game />} />
             <Route path="/settings" element={<Settings />} />
