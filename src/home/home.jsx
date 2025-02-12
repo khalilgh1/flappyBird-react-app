@@ -21,12 +21,6 @@ export default function Home() {
                 <h1 className="title animate__animated animate__fadeIn">
                     Flappy Bird Enhanced Edition
                 </h1>
-                <button
-                    className='animate__animated animate__fadeIn'
-                    onClick={() => window.location.href = '/flappyBird-react-app/game'}
-                >
-                    PLAY NOW!
-                </button>
                 <div className="bird-container">
                     <SparklesCore className="sparkles"
                         background="transparent"
