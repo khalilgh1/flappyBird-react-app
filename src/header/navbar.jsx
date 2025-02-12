@@ -17,12 +17,6 @@ function Navbar() {
                     Game
                 </Link>
             </li>
-            <li>
-                <Link to="/settings">  {/* Change from './settings' to '/settings' */}
-                    <i className="icon fa-solid fa-gear"></i>
-                    Settings
-                </Link>
-            </li>
         </ul>
     );
 }
